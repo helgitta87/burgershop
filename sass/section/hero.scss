@@ -1,0 +1,80 @@
+.hero {
+	background: url("../img/bg/hero_bg.jpg") center center no-repeat;
+	background-size: cover;
+	position: relative;
+
+	.container {
+		position: static;
+	}
+}
+
+.hero__container {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	right: 0;
+}
+
+.hero__content {
+    @include clearfix;
+}
+
+.hero__left {
+	float: left;
+	width: 50%;
+}
+
+.hero__img {
+	display: inline-block;
+	max-width: 100%;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);    
+}
+
+.hero__right {
+	float: right;
+	width: 50%;
+	padding-top: 115px;
+}
+
+.hero__text {
+	font-size: 65px;
+	color: #fff;
+	font-family: 'Lifehack_medium', serif;
+	text-transform: lowercase;
+	line-height: 1em;
+}
+
+
+.arrow-down {
+	display: block;
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	width: 35px;
+	height: 20px;
+	margin-left: -15px;
+	transition: .5s;
+	height: 60px;
+
+	&:hover {
+		svg {
+			margin-top: -10px;
+			width: 35px;
+			height: 35px;
+		}
+	}
+
+	svg {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 35px;
+		height: 20px;
+		transform: translate(-50%, -50%);
+		transition: .5s;
+	}
+}
+

@@ -1,0 +1,79 @@
+.header {
+	padding-top: 12px;
+    @extend %clearfix;   
+}
+
+.header__left {
+	float: left;
+	width: 32%;
+}
+
+.header__right {
+	float: left;
+	width: 68%;
+	padding-top: 13px;
+}
+
+.nav {
+    display: inline-block; 
+    width: 83%;
+    vertical-align: middle;    
+}
+
+.nav__list {
+    width: 100%;
+    @extend %clearfix;
+}
+
+.nav__item {
+    display: block;
+    float: left;
+    white-space: nowrap;
+    margin-right: 15px;
+    
+    &:last-child {
+		margin-right: 0;
+        
+		&:after {
+			display: none;
+		}
+	}
+
+	&:after {
+		content: "";
+		display: inline-block;
+        vertical-align: middle;
+		width: 4px;
+		height: 4px;
+		border-radius: 50%;
+		background: #fff;
+		margin-left: 15px;
+	}
+}
+
+.nav__link {
+	display: inline-block;
+    vertical-align: middle;
+	font-size: 13px;
+	text-transform: uppercase;
+	color: white;
+	text-decoration: none;
+	font-family: 'Ubuntu_400', serif;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.btn-order_header {
+    display: inline-block;
+    vertical-align: middle;
+    width: 14%;
+	padding: 9px 0;
+	margin-left: 2%;
+}
+
+
+
+
+

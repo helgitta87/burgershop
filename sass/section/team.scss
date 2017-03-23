@@ -1,0 +1,113 @@
+.team {
+	background: url("../img/bg/team_bg.jpg") center no-repeat;
+    background-size: cover;
+	position: relative;
+    
+    .section__title {
+        display: block;
+        margin-bottom: 12%;
+    }
+}
+
+.team__right-section {
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 50%;
+	background-color: #2f3234;
+    opacity: 0.93;
+	padding: 5% 2% 0% 7%;
+}
+
+.team-acco__item {
+	margin-bottom: 40px;
+
+	&.active {
+		.team-acco__link {
+			color: $yellow;
+
+			&:before {
+				transform: rotate(-180deg);
+			}
+		}
+	}
+}
+
+.team-acco__link {
+	color: #fff;
+	font-size: 14px;
+	font-family: 'Gagalin_400', serif;
+	text-decoration: none;
+	position: relative;
+	display: block;
+
+	&:before, &:after {
+		content: "";
+		display: block;
+		position: absolute;
+		left: -18px;
+		top: 8px;
+		width: 0;
+		height: 0;
+	}
+
+	&:before {
+		border-top: 7px solid $yellow;
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-bottom: 0px solid transparent;
+		transform: rotate(0deg);
+		transition: .5s;
+	}
+
+	&:after {
+		display: none;
+		border-bottom: 7px solid $yellow;
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-top: 0px solid transparent;
+	}
+}
+
+.team-acco__content {
+	@extend %clearfix;
+    padding-top: 15px;
+	display: none;
+    
+    &.active {
+        display: block;
+    }
+}
+
+.team-acco__content-left {
+	float: left;
+	text-align: center;
+	width: 30%;
+}
+
+.team-acco__img {
+	display: inline-block;
+    vertical-align: middle;
+	width: 100px;
+	height: 100px;
+}
+
+.team-acco__content-right {
+	float: left;
+	width: 70%;
+}
+
+.team-acco__title {
+	font-family: 'Ubuntu_400', serif;
+    font-weight: bold;
+	font-size: 14px;
+	color: #fff;
+	margin-bottom: 14px;
+}
+
+.team-acco__text-content {
+	font-family: 'Ubuntu_300', serif;
+	color: #fff;
+	font-size: 14px;
+}

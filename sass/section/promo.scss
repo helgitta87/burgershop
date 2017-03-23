@@ -1,0 +1,45 @@
+.promo {
+	background: url("../img/bg/promo_bg.jpg") center center no-repeat;
+	background-size: cover;
+	text-align: center;
+    
+    .container {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.section__title {
+		margin-bottom: 80px;
+	}
+	
+}
+
+.promo__list {
+	font-size: 0;
+
+	* {
+		font-size: 14px;
+	}
+}
+
+.promo__item {
+	display: inline-block;
+    vertical-align: middle;
+	width: 33.3%;
+}
+
+.promo__icon {
+	height: 100px;
+	width: 100px;
+	position: relative;
+	display: inline-block;
+}
+
+.promo__title {
+    margin-bottom: 20px;
+	font-size: 24px;
+	font-family: 'Lifehack_medium', cursive;
+	color: $black;
+	white-space: nowrap;
+}

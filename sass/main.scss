@@ -1,0 +1,56 @@
+//variables for colors
+$yellow: #f9b43b;
+$red: #e45028;
+$black: #2f3234;
+$orange: #e35028; //cost in slider
+
+//variables
+$container-width : 940;
+
+
+//mixin for clearfix
+@mixin clearfix {
+	&:before,
+	&:after {
+		content: "";
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+%clearfix {
+	&:before,
+	&:after {
+		content: "";
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+
+//layout
+@import 'layout/adjustments.scss';
+@import 'layout/common.scss';
+@import 'layout/fonts.scss';
+@import 'layout/normalize.scss';
+
+//section
+@import 'section/header.scss';
+@import 'section/hero.scss';
+@import 'section/promo.scss';
+@import 'section/burgers.scss';
+@import 'section/team.scss';
+@import 'section/menu.scss';
+@import 'section/reviews.scss';
+@import 'section/order.scss';
+@import 'section/map.scss';
+@import 'section/footer.scss';
+
+//widget
+@import 'widget/popups.scss';

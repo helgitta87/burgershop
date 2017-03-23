@@ -1,0 +1,58 @@
+.footer {
+	background: url('../img/bg/bg_footer.jpg') center bottom no-repeat;
+	height: 60px;
+	background-size: cover;
+	padding-top: 10px;
+}
+
+.footer__left,
+.footer__right {
+	float: left;
+	width: 50%;
+}
+
+.footer__address {
+	color: #ffffff;
+	font-size: 14px;
+}
+
+.footer__phone {
+    font-family: 'Ubuntu_300', serif;
+    font-weight: bold;
+	color: $red;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.footer__right {
+	text-align: right;
+	padding-top: 9px;
+}
+
+.social {
+	position: relative;
+	top: 50%;
+}
+
+.social__item {
+	display: inline-block;
+    vertical-align: middle;
+	margin-left: 10px;
+}
+
+.social__link {
+	display: inline-block;
+	max-width: 23px;
+	max-height: 20px;
+	opacity: .3;
+	transition: .3s;
+
+	&:hover {
+		opacity: 1;
+	}
+    
+    svg {
+        width: 23px;
+        height:23px;
+    }
+}
